@@ -1,0 +1,184 @@
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+button, a, input{ outline: none; }
+.quitarContenedor{ display: none; }
+i.quitarContenedor{ display: none; }
+.cursor-pointer{ cursor: pointer; }
+.listStyle-none{ list-style: none; padding: 0; }
+html{ height: 100%; }
+body{ padding-bottom: 80px !important; }
+
+.fixed-scroll {
+	display: scroll;
+	position: fixed;
+	z-index: 1000;
+}
+
+.fx {
+	-webkit-transition: all 750ms ease;
+	-moz-transition: all 750ms ease;
+	-ms-transition: all 750ms ease;
+	-o-transition: all 750ms ease;
+	transition: all 750ms ease;
+}
+
+.eliminarSeleccion{
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none; 
+}
+
+
+
+
+/* INICIO BOTONES */
+
+/* INICIO COLOR FONDOS CONTENEDORES */
+.fondo-primary{ background: #f2f2f2; }
+.fondo-secondary{ background: #FFFFFF; }
+.fondo-dark{ background: #222222; }
+/* FIN COLOR FONDOS CONTENEDORES */
+
+/* INICIO PADDING */
+.btn-cerrarSesion{ 
+	padding-left: 7px !important; 
+	padding-right: 7px !important; 
+	padding-top: 3px !important; 
+	padding-bottom: 3px !important; 
+}
+/* FIN PADDING */
+
+/* FIN BOTONES */
+
+
+
+
+
+/* INICIO COLOR LETRA BOTONES */
+.btn-letter-primary{ color: black; background: transparent;}
+.btn-letter-primary:hover{ color: orange; }
+
+.btn-letter-secondary{ color: #ffffff; background: transparent;}
+.btn-letter-secondary:hover{ color: orange; }
+/* FIN COLOR LETRA BOTONES */
+
+
+
+
+
+/* INICIO COLOR LETRA */
+.color-default{ color: #000000; }
+.color-gray{ color: #777; }
+.color-light{ color: #ffffff; }
+/* FIN COLOR LETRA */
+
+
+
+
+
+/* INICIO BORDERS */
+.border-bottom-primary{ border-bottom: 1px solid #DDDDDD; }
+.border-blr-primary{ 
+	border-left: 1px solid #DDDDDD;
+	border-right: 1px solid #DDDDDD;
+	border-bottom: 1px solid #DDDDDD; 
+}
+.border-all-primary{ border: 1px solid #DDDDDD; }
+/* FIN BORDERS */
+
+
+
+
+
+/* INICIO SLIDER */
+#sliderIndex{
+	width: 100%; 
+	height: 700px;
+}
+/* FIN SLIDER */
+
+
+
+
+
+/* INICIO FUENTES */
+.fuente-lato{
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.fuente-montserrat{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	font-size: 36px;
+	text-transform: uppercase;
+}
+/* FIN FUENTES */
+
+
+
+/* INICIO IMAGENES */
+a[data-from="card"]{ 
+	min-height: 200px; 
+	max-height: 225px; 
+	text-align: center;
+}
+img[data-from="modal"]{ min-height: 150px; max-height: 175px; }
+#fotoPerfilNavBar { max-height: 40px; }
+/* FIN IMAGENES */
+
+
+
+/* INICIO MAPA */
+#map{ height: 500px; } /* TODOS LOS MAPAS */
+#mapaSucursalesIndex #map{ margin-bottom: -16px; } /* MAPA DEL INDEX */
+/* FIN MAPA */
+
+#headerListaProductos{
+	margin-top: 30px;
+	margin-bottom: 60px;
+}
+
+.campoDescripcion{
+	min-height: 50px; 
+	max-height: 100px;
+}
+
+
+ul#menuAdmin h4[data-tipo="submenu-admin"]{
+	font-weight: 325;
+	font-size: 24px;
+}
+
+body > #footer-site {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.pb-64{ padding-bottom: 64px !important; }
+.min-h-100 {min-height: 100%; }
+#lista-productos { margin-bottom: 10px; }
+#lista-productos .card-body{ padding-top: 0; }
+#panelAdmin > ul li a.btn{ box-shadow: unset; }
+
+/*div[data-identidad="productoTienda"].card{
+	border-top: unset;
+	border-left: unset;
+	border-right: unset;
+}*/
+
+/* INICIO MEDIA QUERY */
+@media(max-width: 768px){
+	#sliderHeader{ height: auto; }
+	body{ padding-bottom: 125px !important; }
+}
+/* FIN MEDIA QUERY */
